@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = UIColor.white
         view.translatesAutoresizingMaskIntoConstraints = false
+        //make the view rounder
+        view.layer.cornerRadius = 5
+        view.layer.masksToBounds = true
         return view
     }()
 
