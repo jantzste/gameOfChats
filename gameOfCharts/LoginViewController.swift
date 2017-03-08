@@ -11,6 +11,15 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
+    //add a containerView "cardView"
+    let inputsContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    
     
 
     override func viewDidLoad() {
@@ -18,17 +27,23 @@ class LoginViewController: UIViewController {
 
             //add the background color of the view
         view.backgroundColor = UIColor(r: 61, g: 91, b: 151)
-    
-        //add a containerView "cardView"
-    let inputsContainerView = UIView()
-        inputsContainerView.backgroundColor = UIColor.white
-    
         view.addSubview(inputsContainerView)
+
+        setupInputsContainerView()
+    }
+    
+    
+    func setupInputsContainerView(){
         
         //need x, y width, height constraints
-        
+        inputsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        inputsContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        inputsContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+        inputsContainerView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
     }
+    
+    
 
     //change the color of the statutsbar to white
     override var preferredStatusBarStyle: UIStatusBarStyle{
