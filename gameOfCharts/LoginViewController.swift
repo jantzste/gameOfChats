@@ -71,19 +71,27 @@ class LoginViewController: UIViewController {
         return tf
     }()
     
-    
+    let profilImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "winter-is-coming-wallpaper1")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-            //add the background color of the view
+        //add the background color of the view
         view.backgroundColor = UIColor(r: 61, g: 91, b: 151)
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
+        view.addSubview(profilImage)
 
         setupInputsContainerView()
         setupLoginRegisterButton()
+        setupProfileImageView()
     }
     
     
@@ -152,6 +160,14 @@ class LoginViewController: UIViewController {
         
     }
     
+    func setupProfileImageView(){
+        //need x, y, width, height constraints
+
+        profilImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profilImage.bottomAnchor.constraint(equalTo: inputsContainerView.topAnchor, constant: -12).isActive = true
+        profilImage.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        profilImage.heightAnchor.constraint(equalToConstant: 150).isActive = true
+    }
     
 
     //change the color of the statutsbar to white
