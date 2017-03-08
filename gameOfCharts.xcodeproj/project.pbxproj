@@ -14,6 +14,7 @@
 		F52B53E41E7041190071A4C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B53E21E7041190071A4C1 /* LaunchScreen.storyboard */; };
 		F52B53EF1E70411A0071A4C1 /* gameOfChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B53EE1E70411A0071A4C1 /* gameOfChartsTests.swift */; };
 		F52B53FA1E70411A0071A4C1 /* gameOfChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B53F91E70411A0071A4C1 /* gameOfChartsUITests.swift */; };
+		F52B54081E70493D0071A4C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B54071E70493D0071A4C1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F52B53F51E70411A0071A4C1 /* gameOfChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameOfChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B53F91E70411A0071A4C1 /* gameOfChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfChartsUITests.swift; sourceTree = "<group>"; };
 		F52B53FB1E70411A0071A4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52B54071E70493D0071A4C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		F52B53D81E7041190071A4C1 /* gameOfCharts */ = {
 			isa = PBXGroup;
 			children = (
+				F52B54091E704A7D0071A4C1 /* Controller */,
 				F52B53D91E7041190071A4C1 /* AppDelegate.swift */,
-				F52B53DB1E7041190071A4C1 /* ViewController.swift */,
 				F52B53DD1E7041190071A4C1 /* Main.storyboard */,
 				F52B53E01E7041190071A4C1 /* Assets.xcassets */,
 				F52B53E21E7041190071A4C1 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				F52B53FB1E70411A0071A4C1 /* Info.plist */,
 			);
 			path = gameOfChartsUITests;
+			sourceTree = "<group>";
+		};
+		F52B54091E704A7D0071A4C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F52B54071E70493D0071A4C1 /* LoginViewController.swift */,
+				F52B53DB1E7041190071A4C1 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52B54081E70493D0071A4C1 /* LoginViewController.swift in Sources */,
 				F52B53DC1E7041190071A4C1 /* ViewController.swift in Sources */,
 				F52B53DA1E7041190071A4C1 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +526,7 @@
 				F52B54001E70411A0071A4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F52B54011E70411A0071A4C1 /* Build configuration list for PBXNativeTarget "gameOfChartsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				F52B54031E70411A0071A4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F52B54041E70411A0071A4C1 /* Build configuration list for PBXNativeTarget "gameOfChartsUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				F52B54061E70411A0071A4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
